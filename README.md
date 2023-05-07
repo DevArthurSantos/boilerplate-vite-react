@@ -1,4 +1,5 @@
 # React+Vite boilerplate
+
 Este é um boilerplate básico para iniciar um projeto React com Vite.
 Ele inclui as configurações básicas necessárias para começar a desenvolver
 seu aplicativo React de forma rápida e eficiente.
@@ -24,7 +25,7 @@ seu aplicativo React de forma rápida e eficiente.
   │           └── shared - Componentes que são usados para construir a UI da aplicação.
   │
   │    ├── infra - Contém arquivos de infraestrutura, como estilos globais, tipos e utilitários.
-  │           ├── styles - Contém os estilos usados ​​pela aplicação.
+  │           ├── styles - Contém os estilos usados pela aplicação.
   │           ├── types - Contém arquivos de tipos TypeScript
   │                 ├── @DTS - Para definições de tipos para bibliotecas de terceiros "*.d.ts"
   │                 └──  * - Para tipos personalizados
@@ -46,4 +47,32 @@ seu aplicativo React de forma rápida e eficiente.
 
 "usando npm:" "npm install"
 
-"usando pnpm*:" "pnpm install"
+"usando pnpm\*:" "pnpm install"
+
+# Como Configurar o prettier sua máquina
+
+Antes de qualquer configuração inicial, baixe a extensão dispónivel no vscode depois dessa etapa abra o arquivo json setting e cole toda essas configurações:
+
+```json
+"[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+```
+
+após de colar reinicie seu vscode e divirta-se!
