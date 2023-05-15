@@ -1,5 +1,7 @@
+import HomePageLayout from "@foundations/layout/Home"
+
 function HomePage() {
-  return (<p>Hello World</p>)
+  return <HomePageLayout />
 }
 
 export default HomePage
