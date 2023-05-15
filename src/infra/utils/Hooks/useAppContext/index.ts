@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { AppContext } from "@infra/utils/modules/Context";
+import { AppContext } from "@infra/utils/Context";
 
 export function useAppContext() {
   const context = useContext(AppContext)

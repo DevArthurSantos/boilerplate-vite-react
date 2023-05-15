@@ -1,13 +1,13 @@
-import { CustomerOptions } from "@infra/enums/apiEnums"
+import { CustomerOptionsExample } from "@infra/enums/apiEnums"
 
-export type userInfos = {
+export type userInfosExample = {
   token: string,
   requests: number,
   instances: []
 }
 
-export type CustomerProps = {
+export type CustomerPropsExample = {
   customerIp?: string
   customerToken?: string
-  option: CustomerOptions
+  option: CustomerOptionsExample
 }
