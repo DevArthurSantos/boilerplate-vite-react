@@ -51,6 +51,9 @@ const GlobalStyle = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+  html {
+    font-size: 62.5%;
+  }
   body {
     line-height: 1;
     font-family: Roboto;
