@@ -1,5 +1,5 @@
-import { CustomerOptions } from "@infra/enums/apiEnums";
-import { CustomerProps, userInfos } from "@infra/types/apiProps";
+import { CustomerOptionsExample } from "@infra/enums/apiEnums";
+import { CustomerPropsExample, userInfosExample } from "@infra/types/apiProps";
 import axiosInstance from "./axiosInstance"
 
 class Api {
@@ -11,18 +11,18 @@ class Api {
     return response.data;
   }
 
-  async getCustomer({ customerToken, customerIp, option }: CustomerProps): Promise<userInfos> {
+  async getCustomer({ customerToken, customerIp, option }: CustomerPropsExample): Promise<userInfosExample> {
     let apiUrl: string;
 
-    if (option === CustomerOptions.new) {
+    if (option === CustomerOptionsExample.new) {
       apiUrl = `${this.API_CUSTOMER_URL}/new/${customerIp}`;
-    } else if (option === CustomerOptions.my) {
+    } else if (option === CustomerOptionsExample.my) {
       apiUrl = `${this.API_CUSTOMER_URL}/my/${customerToken}`;
     } else {
       throw new Error('Invalid getCustomer option');
     }
 
-    return this.callApi<userInfos>(apiUrl);
+    return this.callApi<userInfosExample>(apiUrl);
   }
 }
 

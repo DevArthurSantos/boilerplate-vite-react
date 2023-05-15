@@ -1,4 +1,5 @@
-export enum CustomerOptions {
+export enum CustomerOptionsExample {
   my = "my",
   new = "new"
 }
+
