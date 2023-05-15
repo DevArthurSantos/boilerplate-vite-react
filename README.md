@@ -20,9 +20,11 @@ seu aplicativo React de forma rápida e eficiente.
   │                 └── others
   │
   ├── src - Código-fonte
-  │    ├── components - Componentes usados na aplicação.
-  │           ├── patterns - Componentes de alto nivel como formulários, modais, header, footer e outros.
-  │           └── shared - Componentes que são usados para construir a UI da aplicação.
+  │    ├── foundations - Componentes básicos usados em todo o aplicativo.
+  │           ├── components - Componentes usados na aplicação.
+  │                 ├── patterns - Componentes de alto nivel como formulários, modais, header, footer e outros.
+  │                 └── shared - Componentes que são usados para construir a UI da aplicação.
+  │           └── layout - Componentes que são usados para construir o layout das paginas.
   │
   │    ├── infra - Contém arquivos de infraestrutura, como estilos globais, tipos e utilitários.
   │           ├── styles - Contém os estilos usados pela aplicação.
